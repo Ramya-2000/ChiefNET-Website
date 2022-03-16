@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>     
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Chiefnet</title> 
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+  <style>
+    footer {
+display: inline-block;
+width: 100%;
+padding: 50px 0;
+}
+.footer-title{
+color:rgb(255,133,71);
+}
+.nav-item{
+text-decoration:none;
+}
+.swaves {
+position: relative;
+width: 100%;
+height: 15vh;
+margin-bottom: -7px;
+/*Fix for safari gap*/
+min-height: 100px;
+max-height: 400px;
+}
+/* Animation */
+.parallax>use {
+animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+.parallax>use:nth-child(1) {
+animation-delay: -2s;
+animation-duration: 7s;
+}
+.parallax>use:nth-child(2) {
+animation-delay: -3s;
+animation-duration: 10s;
+}
+.parallax>use:nth-child(3) {
+animation-delay: -4s;
+animation-duration: 13s;
+}
+.parallax>use:nth-child(4) {
+animation-delay: -5s;
+animation-duration: 20s;
+}
+@keyframes move-forever {
+0% {
+transform: translate3d(-90px, 0, 0);
+}
+100% {
+transform: translate3d(85px, 0, 0);
+}
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+.waves {
+height: 40px;
+min-height: 40px;
+}
+.content {
+height: 30vh;
+}
+}
+
+/*Other*/
+
+.unique-color-dark {
+background-color: #e2d9d1 !important;
+}
+.navbar-brand {
+color: white;
+}
+    footer {
+      background-image: url(Rectangle\ 81.svg);
+      background-size: 1450px 560px;
+}
+
+</style>
+</head>
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container">
+      <div class="header-container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <h1 class=""><a href="index.html"><span><img src="assets/img/ChiefNET.svg" alt="ChiefNET"></span></a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Product</a></li>
+            <li><a class="nav-link scrollto" href="#about">Solution</a></li>
+            <li><a class="nav-link scrollto" href="#services">Use Case</a></li>
+        <!--<li><a class="nav-link scrollto " href="#portfolio">Partners</a></li>-->
+            <li><a class="nav-link scrollto" href="#team">Team</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+
+            <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="#">Drop Down 1</a></li>
+                <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Drop Down 2</a></li>
+                <li><a href="#">Drop Down 3</a></li>
+                <li><a href="#">Drop Down 4</a></li>
+              </ul>
+            </li> -->
+            <li><a class="getstarted scrollto" href="#about">Register/login</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+      </div><!-- End Header Container -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 d-flex flex-column justify-content-center float-end">
+          <h1 data-aos="fade-up">Connecting Small And Medium Businesses World Wide</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400"></h2>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+              <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Explore Now</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/Group 1318.svg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Clients Section ======= -->
+    <!-- <section id="clients" class="clients">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="100">
+            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="200">
+            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="300">
+            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="400">
+            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="500">
+            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="600">
+            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+      </div>
+    </section>End Clients Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+     
+    </section><!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="row">
+          <h1 class="d-flex justify-content-center fw-bold text-dark">Our Services</h1>
+          <img class="justify-content-center mb-4 rounded mx-auto d-block" src="assets/img/Group 1302.svg" style='width: 15%' alt="image">
+          <div class="col-xl-12 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <img src="assets/img/Illustration 1 (1).svg" class="img-fluid mb-5" alt="">
+                   <h4 style="color:#FC8019">Cloud Connection</h4>
+              <p class="text-muted">Simply put, cloud direct connect is a connection between a private network and a public cloud. In the past, all connections to the cloud were from a public network into a public cloud, but with the rise of new technologies, different types of clouds have become available, including public, private, and hybrid.</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <img src="assets/img/Group 1329 (1).svg" class="img-fluid mb-5" alt="">
+                    <h4 style="color:#FC8019">Edge Computing</h4>
+              <p class="text-muted">Edge computing is used in the manufacturing sector to monitor manufacturingprocesses and apply machine learning and real-time analytics to improve product qualities and detect production errors. It also supports the environmental sensors to be incorporated in manufacturing plants.</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <img src="assets/img/Group 1330.svg" class="img-fluid mb-5" alt="">
+                    <h4 style="color:#FC8019">5G Network</h4>
+              <p class="text-muted">In telecommunications, 5G is the fifth-generation technology standard for broadband cellular networks, which cellular phone companies began deploying worldwide in 2019, and is the planned successor to the 4G networks which provide connectivity to most current cellphones.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <!-- <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="text-center" data-aos="zoom-in">
+          <h3>Call To Action</h3>
+          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a class="cta-btn" href="#">Call To Action</a>
+        </div>
+
+      </div>
+    </section>End Cta Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-12 py-lg-0 py-3s">
+              <img src="Layer 4 1.svg" width="600" height="550">
+              </div>
+              <div class="col-lg-6 col-md-6 col-12 pt-5"><br><br>
+                  <h1>Benifits for ChiefNET Ecosystem</h1>
+                  <img src="Group 1302.svg"> 
+                  <h2>We Provide Many<br>Features You Can Use </h2>
+                  <p class="text-secondary">You can explore the features that we provide with fun<br>and have their own function each features</p>
+                  <u1> 
+                      <img src="bx_bxs-check-circle.svg">"<p1>Powerful online protection</p1><br>
+                      <img src="bx_bxs-check-circle.svg"><p1>Internet without border</p1><br>
+                      <img src="bx_bxs-check-circle.svg"><p1>User friendly</p1><br>
+                      <img src="bx_bxs-check-circle.svg"><p1>No specific time limits</p1><br>
+                  </u1>
+              </div>
+      </div>
+      </div>
+</section>
+
+ <!--Partners section
+<section id="clients" class="clients">
+  <div class="container" data-aos="fade-up">
+    <header class="section-header">
+      <h2>Proudly Serving</h2>
+    </header>
+    <div class="clients-slider swiper">
+      <div class="swiper-wrapper align-items-center">
+        <div class="swiper-slide"><img src="photo6161357532640161713.jpg" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="b.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="photo6161357532640161709.jpg" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="photo6161357532640161708.jpg" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="a.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="photo6161357532640161710.jpg" class="img-fluid" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section> -->
+<!-- End Services Section -->
+
+    <!--======= Portfolio Section ======= -->
+   <!-- <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">
+          <p>Proudly Serving</p>
+        </header>
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="intel.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="landForm.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="M.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="yavar.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="shell.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="elarby.jpg" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section> End Clients Section -->
+    </section><!-- End Portfolio Section -->
+
+
+
+
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials">
+      <div class="bg-holder" style="background-image:url(assets/img/illustrations/testimonial-bg-1.png);background-position:center;background-size:cover;">
+      </div>
+      <!--/.bg-holder-->
+  
+      <div class="bg-holder" style="background-image:url(assets/img/illustrations/testimonial-bg.png);background-position:right top;background-size:auto;margin-top:-43px;margin-left:-200px;">
+      </div>
+      <!--/.bg-holder-->
+  
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-lg-12 mx-auto text-center mb-2">
+            <h5 class="fw-bold fs-2 fs-lg-5 lh-sm mb-3 text-dark d-flex justify-content-center">Read What Our Clients Say</h5>
+            <img class="justify-content-center mb-4 rounded mx-auto d-block" src="assets/img/Group 1302.svg" alt="image"> 
+          </div>
+        </div>
+        <div class="row flex-center h-100 circle-blend circle-blend-left circle-pink" style="z-index:1;">
+          <div class="col-xl-12 circle-blend circle-blend-right circle-cyan">
+            <div class="carousel slide" id="carouselTestimonials" data-bs-ride="carousel">
+              <div class="carousel-inner ps-sm-7 pb-sm-7 ps-md-5 ps-lg-7 pb-lg-7">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <div class="row h-100 align-items-center">
+                    <div class="col-auto">
+                      <div class="wrapper shadow-square-left-bottom">
+                        <div class="card testimonial-card-bg h-100">
+                          <div class="card-body h-100 p-4"><img class="border-klean-gradient" src="assets/img/Group 1324.png" alt="testimonials" width="430" /></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-5 col-lg-6 col-xl-7 mb-4 mx-4 ms-xxl-auto"><img class="img-fluid" src="assets/img/Vector (14).svg" alt="testimonials-bg" />
+                      
+                      <p class="mt-4 pe-xxl-8 text-muted">"During this time of such tremendous digital<br> transformation in business, a MEF 3.0 SD-WAN <br>certification is proven to conform to MEF's meticulous <br>specifications for performance, assurance, <br>and agility. I am very happy to see one of the <br>main telecommunications technology suppliers committing <br>to meet the industry's highest standards."</p>
+                      <div class="my-4">
+                        <svg class="bi bi-star-fill me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#EFAB18" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg class="bi bi-star-fill me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#EFAB18" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg class="bi bi-star-fill me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#EFAB18" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg class="bi bi-star-fill me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#EFAB18" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg class="bi bi-star-fill me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#EFAB18" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                      </div>
+                      <h6 class="fw-bold fs-lg-1">Daniel Lane,<span class="ms-2 fw-normal text-400 fs--1">Developer</span></h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <div class="row h-100 align-items-center">
+                    <div class="col-auto">
+                      <div class="wrapper shadow-square-left-bottom">
+                        <div class="card testimonial-card-bg h-100">
+                          <div class="card-body h-100 p-4"><img class="border-klean-gradient" src="assets/img/Group 1324.png" alt="testimonials" width="430" /></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-5 col-lg-6 col-xl-7 mb-4 mx-4 ms-xxl-auto"><img class="img-fluid" src="assets/img/Vector (14).svg" alt="testimonials-bg" />
+                      
+                      <p class="mt-4 pe-xxl-8 text-muted">"During this time of such tremendous digital<br> transformation in business, a MEF 3.0 SD-WAN <br>certification is proven to conform to MEF's meticulous <br>specifications for performance, assurance, <br>and agility. I am very happy to see one of the <br>main telecommunications technology suppliers committing <br>to meet the industry's highest standards."</p>
+                      <div class="my-4">
+                        <svg class="bi bi-star-fill me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#EFAB18" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg class="bi bi-star-fill me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#EFAB18" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg class="bi bi-star-fill me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#EFAB18" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg class="bi bi-star-fill me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#EFAB18" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg class="bi bi-star-fill me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#EFAB18" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                      </div>
+                      <h6 class="fw-bold fs-lg-1">Ainara Vergara,<span class="ms-2 fw-normal text-400 fs--1">Designer</span></h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <div class="row h-100 align-items-center">
+                    <div class="col-auto">
+                      <div class="wrapper shadow-square-left-bottom">
+                        <div class="card testimonial-card-bg h-100">
+                          <div class="card-body h-100 p-4"><img class="border-klean-gradient" src="assets/img/Group 1324.png" alt="testimonials" width="430" /></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-5 col-lg-6 col-xl-7 mb-4 mx-4 ms-xxl-auto"><img class="img-fluid" src="assets/img/Vector (14).svg" alt="testimonials-bg" />
+                      
+                      <p class="mt-4 pe-xxl-8 text-muted">"During this time of such tremendous digital<br> transformation in business, a MEF 3.0 SD-WAN <br>certification is proven to conform to MEF's meticulous <br>specifications for performance, assurance, <br>and agility. I am very happy to see one of the <br>main telecommunications technology suppliers committing <br>to meet the industry's highest standards."</p>
+                      <div class="my-4">
+                        <svg class="bi bi-star-fill me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#EFAB18" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg class="bi bi-star-fill me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#EFAB18" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg class="bi bi-star-fill me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#EFAB18" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg class="bi bi-star-fill me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#EFAB18" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg class="bi bi-star-fill me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#EFAB18" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                      </div>
+                      <h6 class="fw-bold fs-lg-1">Niek Bove,<span class="ms-2 fw-normal text-400 fs--1">Senior Developer</span></h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row h-100 align-items-center">
+                    <div class="col-auto">
+                      <div class="wrapper shadow-square-left-bottom">
+                        <div class="card testimonial-card-bg h-100">
+                          <div class="card-body h-100 p-4"><img class="border-klean-gradient" src="assets/img/Group 1324.png" alt="testimonials" width="430" /></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-5 col-lg-6 col-xl-7 mb-4 mx-4 ms-xxl-auto"><img class="img-fluid" src="assets/img/Vector (14).svg" alt="testimonials-bg" />
+                      
+                      <p class="mt-4 pe-xxl-8 text-muted">"During this time of such tremendous digital<br> transformation in business, a MEF 3.0 SD-WAN <br>certification is proven to conform to MEF's meticulous <br>specifications for performance, assurance, <br>and agility. I am very happy to see one of the <br>main telecommunications technology suppliers committing <br>to meet the industry's highest standards."</p>
+                      <div class="my-4">
+                        <svg class="bi bi-star-fill me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#EFAB18" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg class="bi bi-star-fill me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#EFAB18" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg class="bi bi-star-fill me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#EFAB18" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg class="bi bi-star-fill me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#EFAB18" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg class="bi bi-star-fill me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#EFAB18" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                      </div>
+                      <h6 class="fw-bold fs-lg-1">Niek Bove,<span class="ms-2 fw-normal text-400 fs--1">Senior Developer</span></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row flex-center mx-5">
+                <div class="col-auto position-relative z-index-2">
+                  <ol class="carousel-indicators me-xxl-7 me-xl-4 me-lg-7">
+                    <li class="active bg-warning" data-bs-target="#carouselTestimonials" data-bs-slide-to="0"></li>
+                    <li class="active bg-warning" data-bs-target="#carouselTestimonials" data-bs-slide-to="1"></li>
+                    <li class="active bg-warning" data-bs-target="#carouselTestimonials" data-bs-slide-to="2"></li>
+                    <li class="active bg-warning" data-bs-target="#carouselTestimonials" data-bs-slide-to="3"></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="section-title" data-aos="fade-right">
+              <h2>Team</h2>
+              <p>Our team We leverage the open source tools and technologies and combine it with proprietary software to create meaningful value for all stake holders.</p>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+
+              <div class="col-lg-6 mt-4">
+                <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="pic"><img src="photo_2022-03-15_09-37-16.jpg" class="img-fluid" alt="" style="height: 200px;"></div>
+                  <div class="member-info">
+                    <h4>Thirukumar</h4>
+                    <span>Managing Director</span>
+                    <div class="social">
+                      <a href=""><i class="ri-twitter-fill"></i></a>
+                      <a href=""><i class="ri-facebook-fill"></i></a>
+                      <a href=""><i class="ri-instagram-fill"></i></a>
+                      <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mt-4">
+                <div class="member" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="pic"><img src="photo_2022-03-15_09-53-07.jpg" class="img-fluid" alt="" style="height: 200px;"></div>
+                  <div class="member-info">
+                    <h4>Stalin</h4>
+                    <span>Back End Lead</span>
+                    <div class="social">
+                      <a href=""><i class="ri-twitter-fill"></i></a>
+                      <a href=""><i class="ri-facebook-fill"></i></a>
+                      <a href=""><i class="ri-instagram-fill"></i></a>
+                      <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mt-4">
+                <div class="member" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="pic"><img src="photo_2022-03-15_09-53-40.jpg" class="img-fluid" alt="" style="height: 200px;"></div>
+                  <div class="member-info">
+                    <h4>Edison</h4>
+                    <span>Full Stack Developer</span>
+                    <div class="social">
+                      <a href=""><i class="ri-twitter-fill"></i></a>
+                      <a href=""><i class="ri-facebook-fill"></i></a>
+                      <a href=""><i class="ri-instagram-fill"></i></a>
+                      <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mt-4">
+                <div class="member" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="pic"><img src="photo_2022-03-15_09-53-49.jpg" class="img-fluid" alt="" style="height: 200px;"></div>
+                  <div class="member-info">
+                    <h4>Sabarish</h4>
+                    <span>Front End Lead</span>
+                    <div class="social">
+                      <a href=""><i class="ri-twitter-fill"></i></a>
+                      <a href=""><i class="ri-facebook-fill"></i></a>
+                      <a href=""><i class="ri-instagram-fill"></i></a>
+                      <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <div class="section-title">
+              <h2>Contact</h2>
+
+
+
+            </div>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+            <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2Tamil+Nadu!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+            <div class="info mt-4">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Location:</h4>
+              <p>4th Floor,
+                N Towers, 25, Tex Park Road,
+                Nehru Nagar West,
+                Coimbatore Aerodrome(P.O),
+                PIN 641014
+                </p>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 mt-4">
+                <div class="info">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>yavar@gmail.com</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="info w-100 mt-4">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p>+91 9841980041</p>
+                </div>
+              </div>
+            </div>
+
+            <!--<form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+        </div>-->
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer><br><br><br><br>
+      <div class="row mb-2">
+      <div class="col-2">
+        <img src="assets/img/ChiefNET.svg"  class="float-start pt-5">
+      <!--<span style="color:#110303">CHIEF</span>
+      <span style="color:#fd9308">NET</span>-->
+    
+      </div> 
+          <div class="col-2 footer-column">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <p class="footer-title nav-item">Product</p>
+              </li>
+              <li class="nav-item">
+                <a class="text-dark nav-item" href="#">Landing Page</a>
+              </li>
+              <li class="nav-item">
+                <a class="text-dark nav-item" href="#">Popoup Builder</a>
+              </li>
+              <li class="nav-item">
+                <a class="text-dark nav-item" href="#">Web-design</a>
+              </li>
+              <li class="nav-item">
+                <a class="text-dark nav-item" href="#">Content</a>
+              </li>
+              <li class="nav-item">
+                  <a class="text-dark nav-item" href="#">Integrations</a>
+                </li>
+            </ul>
+          </div>
+          <div class="col-2 footer-column">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <p class="footer-title nav-item" >Use Cases</p>
+                </li>
+                <li class="nav-item">
+                  <a class="text-dark nav-item" href="#">Web designers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="text-dark nav-item" href="#">Marketers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="text-dark nav-item" href="#">Small Business</a>
+                </li>
+                <li class="nav-item">
+                  <a class="text-dark nav-item" href="#">Website Builder</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-2 footer-column">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <p class="footer-title nav-item" >Resources</p>
+                </li>
+                <li class="nav-item">
+                  <a class="text-dark nav-item" href="#">Academy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="text-dark nav-item" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="text-dark nav-item" href="#">Themes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="text-dark nav-item" href="#">Hosting</a>
+                </li>
+                <li class="nav-item">
+                    <a class="text-dark nav-item" href="#">Developers</a>
+                  </li>
+                  <li class="nav-link">
+                      <a class="text-dark nav-item" href="#">Support</a>
+                  </li>
+              </ul>
+            </div>
+    
+    
+          <div class="col-2 footer-column">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <p class="footer-title nav-item" >Company</p>
+              </li>
+              <li class="nav-item">
+                <a class="text-dark nav-item" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="text-dark nav-item" href="#">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="text-dark nav-item" href="#">FAQs</a>
+              </li>
+              <li class="nav-item">
+                  <a class="text-dark nav-item" href="#">Teams</a>
+              </li>
+              <li class="nav-item">
+                  <a class="text-dark nav-item" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-2 footer-column">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <p class="footer-title nav-item">Contact Us</p>
+              </li>
+              <li class="nav-item">
+                <img src="icon.svg">
+                <span>Wisconsin ave,suite 700<br> chevy chase,Maryland 20815</span>
+              </li>
+              <li class="nav-item">
+                <img src="icon-1.svg">
+                <span>support@figma.com</span>
+              </li>
+              <li>
+                <p class="footer-title nav-item">Follow us</p>
+                <span><a href="#"><img src="social.svg"></a></span>
+                <span><a href="#"><img src="social-1.svg"></a></span>
+                <span><a href="#"><img src="social-2.svg"></a></span>
+                <span><a href="#"><img src="social-3.svg"></a></span>
+              </li><br>
+              <li>
+                <a href="#"><img src="store.svg"></a>
+                <span><a href="#"><img src="store-1.svg"></a></span>
+                <span><a href="#"><img src="store-2.svg"></a></span>
+              </li>
+            </ul>
+          </div>
+          </div>
+        
+          <div class="row align-items-left">
+             <div class="col-2 text-left">
+               <span class="copyright quick-links">Copyright &copy; 2022 Chiefnet All Rights Reserved</script>
+               </span>
+             </div>
+  
+          </div>
+      </div>
+    </footer>
+    <div>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+  </header>
+  
+  
+    
+  <!---Footer--->
+  <div>
+          <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+              <defs>
+                  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+              </defs>
+              <g class="parallax">
+                  <use xlink:href="#gentle-wave" x="10" y="0" fill="rgb(255,152,0)" />
+                  <use xlink:href="#gentle-wave" x="10" y="3" fill="rgb(225,152,0)" />
+                  <use xlink:href="#gentle-wave" x="10" y="5" fill="rgb(225,152,0)" />
+                  <use xlink:href="#gentle-wave" x="10" y="5" fill="#dd7c2c" />
+              </g>
+          </svg>
+      </div>
+  
+    <!--<div class="footer-copyright text-center py-3"><h7> Copyright © 2022 Chiefnet All Rights Reserved</h7>
+      <h7 href="https://discord.gg/uRqH5UT"> Croxy</h7>-->
+    </div>
+  </footer>
+  </div>
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
